@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .paragraph {
+    font-family: "Merriweather", serif;
+    @apply text-zinc-600
+  }  
+}
+.diff {
+  font-family: "Merriweather", serif;
+}
