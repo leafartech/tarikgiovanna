@@ -8,8 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundColor: {
-        "client-pallete": "#fcfcfb"
+      colors: {
+        "client-pallete": "#fcfcfb",
+        "client-pallet-2": "#582c44"
       }
     },
   },

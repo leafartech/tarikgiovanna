@@ -2,9 +2,9 @@ import CardItem from "@/components/cardItem";
 
 export default function Card() {
     return (
-        <div className="bg-zinc-100 rounded-3xl max-w-lg border-4 border-zinc-800">
+        <div className="bg-zinc-100 rounded-3xl max-w-lg border-4 border-client-pallet-2">
             <div className="p-6">
-                <h2 className="sm:text-3xl text-2xl font-medium mb-4">Você se sente <span className="font-bold">frustrada</span>?</h2>
+                <h2 className="sm:text-3xl text-2xl font-medium mb-4">Você se sente <span className="font-bold text-client-pallet-2">frustrada</span>?</h2>
                 <div className="flex flex-col gap-1">
                     <CardItem
                         text="Como se você não conseguisse progredir na vida?"
@@ -20,7 +20,7 @@ export default function Card() {
                     />
                 </div>
             </div>
-            <div className="bg-zinc-800 p-6 rounded-b-xl">
+            <div className="bg-client-pallet-2 p-6 rounded-b-xl">
                 <h4 className="text-white text-lg mb-4"><span className="font-bold">Eu te entendo</span>, sei como é se sentir frustrada e pensar:</h4>
                 <p className="text-zinc-400 text-sm">"Eu não consigo progredir em nada, nunca termino o que começo, não tenho valor para ninguém, não sei impor limites para nada, mas sei que tenho potencial para mais, mas por falta de ânimo, acabo não fazendo nada".</p>
             </div>
