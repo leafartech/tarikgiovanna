@@ -9,6 +9,7 @@ import HeroFlexRight from "@/components/heroFlexRight";
 import Line from "@/components/line";
 import Payment from "@/components/payment";
 import Section from "@/components/section";
+import Image from "next/image";
 
 export default function Page() {
   return (
@@ -17,8 +18,8 @@ export default function Page() {
       <main className="sm:pt-0 pt-12">
         <Section classNameS="sm:pb-24 pb-12">
           <div className="sm:grid sm:grid-cols-2 flex flex-col sm:gap-0 gap-4">
-            <div className="flex justify-center">
-              <img src="images/bg2.webp" alt="Mulher desmotivada" />
+            <div className="flex justify-center ">
+              <Image src="/images/bg2.webp" alt="Mulher desmotivada" width={319} height={500} />
             </div>
             <Card />
           </div>
@@ -40,7 +41,7 @@ export default function Page() {
             <div className="px-2 rounded-xl text-center max-w-lg">
               <h4 className="text-xl font-medium">Essa solução é a construção da sua <span className="font-bold text-client-pallet-2">AUTOESTIMA</span>.</h4>
             </div>
-            <img src="images/bg3.webp" alt="Autoestima" className="sm:max-w-xl w-full" />
+            <Image src="/images/bg3.webp" alt="Autoestima" width={576} height={195} />
             <Button>Quero ser uma mulher realizadora</Button>
           </div>
         </Section>
@@ -50,6 +51,8 @@ export default function Page() {
             <CenteredText>“É impossível parar de procrastinar”, <span className="font-bold text-client-pallet-2">permita que eu me apresente</span>.</CenteredText>
           </div>
           <HeroFlex
+            width={343}
+            height={641}
             imagePath="bg4"
           >
             <div className="flex flex-col sm:gap-8 gap-4">
@@ -60,7 +63,7 @@ export default function Page() {
                 <p className="text-zinc-600 text-lg">Entendi que o problema era minha autoestima, não as ferramentas. Assim, criei um desafio 100% prático que me permitiu ter mais confiança e viver dias mais produtivos e alinhados com minhas crenças.</p>
                 <p className="text-zinc-600 text-xl"><span className="font-bold">Esse é o Desafio 21 Dias Extraordinários.</span></p>
                 <div className="">
-                  <img src="images/bg5.webp" alt="assinatura" className="h-12 pt-6 border-t border-zinc-800" />
+                  <Image src="/images/bg5.webp" alt="assinatura" className="border-t border-zinc-800" width={209} height={23} />
                 </div>
               </div>
             </div>
@@ -70,6 +73,8 @@ export default function Page() {
         <Section classNameS="sm:py-24 py-12 px-4 sm:px-0">
           <HeroFlexRight
             imagePath="bg6"
+            width={538}
+            height={379}
           >
             <div className="flex flex-col sm:gap-8 gap-4">
               <h2 className="sm:text-3xl text-2xl"><span className="font-bold text-client-pallet-2">21 Dias Extraordinários</span>: o protocolo de 21 desafios práticos para se tornar a mulher mais admirada que você conhece.</h2>
@@ -86,12 +91,14 @@ export default function Page() {
           <div className="flex flex-col items-center mb-12">
             <CenteredText size={true}><span className="font-bold text-client-pallet-2">Você vai entender o porquê te falta energia para fazer as coisas que você deveria fazer e vive se sentindo frustrada.</span></CenteredText>
             <h5 className="text-zinc-600 font-medium text-lg mt-2 max-w-xl sm:text-center text-left">E porque mentiram quando te disseram que o que você precisa é de disciplina e não de motivação.</h5>
-            <img src="images/bg7.webp" alt="Caminho para alcançar objetivo" className="mt-12" />
+            <Image src="/images/bg7.webp" alt="Caminho para alcançar objetivo" className="mt-12" width={706} height={402} />
           </div>
         </Section>
         <Section classNameS="sm:pb-24 pb-12 px-4 sm:px-0">
           <HeroFlex
             imagePath="bg8"
+            width={343}
+            height={609}
           >
             <div className="flex flex-col justify-between sm:gap-4 gap-2">
               <h2 className="sm:text-3xl text-2xl">Sempre querendo evoluir, se tornar uma mulher melhor, <span className="font-bold text-client-pallet-2">mas ao mesmo tempo sempre paralisada e nunca consegue de fato começar</span>?</h2>
@@ -112,7 +119,9 @@ export default function Page() {
         <Section classNameS="sm:pb-12 pb-6 px-4 sm:px-0">
           <div className="flex flex-col items-center gap-6">
             <CenteredText><span className="font-bold text-client-pallet-2">Conheça aqui os desafios</span></CenteredText>
-            <img src="images/bg9.webp" alt="" className="" />
+            <div className="">
+              <Image src="/images/bg9.webp" alt="" className="" width={868} height={319} />
+            </div>
             <CenteredText sizePlus={true}>O protocolo validado para parar de procrastinar e se tornar a mulher mais admirada que você conhece</CenteredText>
           </div>
           <div className="w-full flex flex-col items-center gap-4 mt-4">
@@ -154,7 +163,7 @@ export default function Page() {
         <Section classNameS="sm:pb-12 pb-6 sm:pt-12 pt-6 bg-zinc-100 px-4 sm:px-0">
           <div className="flex flex-col items-center gap-6">
             <CenteredText>Você ainda vai receber de <span className="font-bold text-client-pallet-2">bônus</span></CenteredText>
-            <img src="images/bg10.webp" alt="" />
+            <Image src="/images/bg10.webp" alt="" width={783} height={380} />
             <h2 className="font-medium sm:text-2xl text-xl sm:text-center text-left max-w-xl">Como fazer um planejamento eficaz e tirar seus planos do papel</h2>
           </div>
         </Section>
@@ -168,16 +177,16 @@ export default function Page() {
         <Section classNameS="sm:py-12 py-6 bg-client-pallet-2 px-4 sm:px-0">
           <div className="flex gap-6 items-center sm:flex-nowrap flex-wrap justify-center">
             <div className="">
-              <img src="images/dep1.webp" className="object-contain rounded-xl" />
+              <Image src="/images/dep1.webp" alt="Depoimentos" className="rounded-xl" width={343} height={185} />
             </div>
             <div className="">
-              <img src="images/dep2.webp" className="object-contain rounded-xl" />
+              <Image src="/images/dep2.webp" alt="Depoimentos" className="rounded-xl" width={319} height={337} />
             </div>
             <div className="">
-              <img src="images/dep3.webp" className="object-contain rounded-xl" />
+              <Image src="/images/dep3.webp" alt="Depoimentos" className="rounded-xl" width={329} height={330} />
             </div>
             <div className="">
-              <img src="images/dep4.webp" className="object-contain rounded-xl" />
+              <Image src="/images/dep4.webp" alt="Depoimentos" className="rounded-xl" width={267} height={359} />
             </div>
           </div>
         </Section>

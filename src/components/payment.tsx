@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "./button";
 
 export default function Payment() {
@@ -13,7 +14,7 @@ export default function Payment() {
             <div className=" px-4 flex flex-col gap-4">
                 <Button>Destrabar minha vaga</Button>
                 <div className="flex justify-center w-full">
-                    <img src="images/bg11.webp" alt="Métodos de pagamento" className="object-contain w-56" />
+                    <Image src="/images/bg11.webp" alt="Métodos de pagamento" width={224} height={32} />
                 </div>
                 <p className="text-zinc-200 text-center text-sm">ATENÇÃO: essa oferta é por tempo limitado e pode se esgotar a qualquer momento.</p>
             </div>
