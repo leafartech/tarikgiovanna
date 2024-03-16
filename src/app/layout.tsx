@@ -4,6 +4,8 @@ import "./globals.css";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
+const merriweather = Merriweather({ subsets: ["latin"] });
+
 export const metadata: Metadata = {
   title: "21 Dias Extraordinários | Tarik & Giovanna",
   description: "21 dias extraordinários",
@@ -16,12 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
-      </head>
-      <body className={montserrat.className}>{children}</body>
+      <body className={`${montserrat.className} ${merriweather.className}`}>{children}</body>
     </html>
   );
 }
