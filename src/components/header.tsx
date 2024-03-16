@@ -1,12 +1,18 @@
 import Button from "./button";
 
-export default function HeaderFlex() {
+interface HeaderFlexProps {
+    image?: boolean
+}
+
+export default function HeaderFlex({image}: HeaderFlexProps) {
     return (
         <header className="sm:h-screen w-full relative flex justify-center">
             <div className="relative w-full max-w-4xl flex sm:flex-row flex-col items-center justify-start">
-                <div className="w-full sm:absolute px-4">
-                    <img src="images/bg1.webp" className="sm:w-full sm:block hidden rounded-xl" />
-                </div>
+                {!image && (
+                    <div className="w-full sm:absolute px-4">
+                        <img src="images/bg1.webp" className="sm:w-full sm:block hidden rounded-xl" />
+                    </div>
+                )}
                 <div className="flex flex-col sm:justify-start sm:items-start justify-center items-center gap-4 max-w-xl z-50 px-4 pt-6">
                     <img src="./images/logo.webp" alt="logo 21 dias extraordinários" className="sm:w-56 w-48" />
                     <img src="images/bg0.webp" className="sm:w-full sm:hidden block rounded-xl" />
