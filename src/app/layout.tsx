@@ -4,7 +4,7 @@ import "./globals.css";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-// const merriweather = Merriweather({ subsets: ["latin"] });
+const merriweather = Merriweather({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "21 Dias Extraordinários | Tarik & Giovanna",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${montserrat.className}`}>{children}</body>
+      <body className={`${montserrat.className} ${merriweather.className}`}>{children}</body>
     </html>
   );
 }
